@@ -14,6 +14,50 @@
 .bannerButton{
     background: linear-gradient(to right,rgba(0, 145, 218, 0.4), rgba(0, 249, 249, 46%));
     border:1px solid rgba(0, 145, 218, .9);
+    position: relative;
+}
+.bannerButton2{
+    background: linear-gradient(to right,rgba(0, 145, 218, 0.4), rgba(0, 249, 249, 46%));
+    border:1px solid rgba(0, 145, 218, .9);
+    position: relative;
+}
+.bannerButton:hover{
+    background: linear-gradient(to right,rgba(0, 145, 218, 0.6), rgba(0, 249, 249, 65%));
+}
+
+.bannerButton:after {
+    content: "";
+	position: absolute;
+	width: 2px;
+	height: 100%;
+
+	
+	background-color: #f3f3f3;
+	top: 0px;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-ms-transition: all 0.5s linear;
+	-o-transition: all 0.5s linear;
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+
+.bannerButton::after {
+	right: 0%;
+	border-radius: 50%;
+	-webkit-transform: translatex(-50%);
+	-ms-transform: translatex(-50%);
+	transform: translatex(-50%);
+
+}
+.bannerButton:hover:after {
+	right: -13%;
+	width:47px;
+    height: 47px;
+	opacity: .5;
+  
+    background: linear-gradient(to top,rgb(3, 53, 152), rgb(2, 126, 163));
+    border-left:1px solid rgb(3, 103, 152);
 }
 .productBox{
     background-image: url("../../assets/productsBg.svg");
@@ -127,7 +171,102 @@ section {
     display: flex;
     animation: swipe var(--speed) linear infinite backwards;
 }
-
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label
+{
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 20px;
+    display: inline-block;
+    color: white;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    margin-top: 1px;
+    border: 1px solid #dddddd0c;
+    border-radius: 100%;
+    background: #dddddd49;
+    
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: #2784dbd2;
+    box-shadow:  0 0 3px 6px  #2784db44;
+    position: absolute;
+    border: 3px solid #2784dbd2;
+    top: 4.2px;
+    left: 3.5px;
+    border-radius: 100%;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+    
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+    opacity: 1;
+    border: 3px solid #2784dbd2;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+   
+}
+input[type="checkbox"] {
+    /* Add if not using autoprefixer */
+    -webkit-appearance: none;
+    /* Remove most all native input styles */
+    appearance: none;
+    /* For iOS < 15 */
+    background-color: var(--form-background);
+    /* Not removed via appearance */
+    margin: 0;
+  
+    font: inherit;
+    color: white;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid white;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+  
+    display: grid;
+    place-content: center;
+  }
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    /* Windows High Contrast Mode */
+    background-color: #2784dbd2;
+  }
+  
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
 
 @keyframes swipe {
     0% {

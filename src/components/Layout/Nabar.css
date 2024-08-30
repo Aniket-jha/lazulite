@@ -6,3 +6,25 @@
     background-color: black;
     z-index: 100;
 }
+.link{
+    position: relative;
+  }
+.link:after{
+    content: '';
+    position: absolute;
+    width: 0;
+     height: 1px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    bottom: 2%;
+    background: #fff;
+    transition: width .4s ease;
+    -webkit-transition: width .4s ease;
+  }
+   
+  .link:hover:after{
+    width: 60%;
+    left: 0;
+    background: #fff;
+  }

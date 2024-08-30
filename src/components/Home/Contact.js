@@ -15,43 +15,48 @@ const Contact = () => {
             </div>
             <div className='col-span-2 rounded-r-lg  py-8 px-8 contactFormBg' >
                 <div className='grid grid-cols-2 gap-6 grid-flow-col' >
-                    <input className='py-2 bg-[#ffffff1e] rounded-lg text-white placeholder:text-[#0091da72] px-3' placeholder='Full Name*' />
-                    <input className='py-2 bg-[#ffffff1e] rounded-lg text-white placeholder:text-[#0091da72] px-3' placeholder='Email*' />
+                    <input className='py-2 bg-[#ffffff1e] rounded-lg text-white outline-none placeholder:text-[#0091da72] px-3' placeholder='Full Name*' />
+                    <input className='py-2 bg-[#ffffff1e] rounded-lg text-white outline-none  placeholder:text-[#0091da72] px-3' placeholder='Email*' />
                 </div>
                 <div className='grid grid-cols-2 mt-6 gap-6 grid-flow-col' >
-                    <input className='py-2 bg-[#ffffff1e] rounded-lg text-white placeholder:text-[#0091da72] px-3' placeholder='Full Name*' />
-                    <input className='py-2 bg-[#ffffff1e] rounded-lg text-white placeholder:text-[#0091da72] px-3' placeholder='Company Name' />
+                    <div className='flex items-center justify-start gap-2'>
+                        <select className='py-2.5 text-[#0091da72]   bg-[#ffffff1e] outline-none rounded-lg text-white placeholder:text-[#0091da72] px-3'>
+                            <option className='text-[#0091da72]'>+971</option>
+                            <option className='text-[#0091da72]'>+97</option>
+                            <option className='text-[#0091da72]'>+01</option>
+                            <option className='text-[#0091da72]'>+971</option>
+                        </select>
+                    <input className='py-2 w-full bg-[#ffffff1e] rounded-lg text-white  outline-none placeholder:text-[#0091da72] px-3' placeholder='Phone Number*' />
+                    </div>
+                    <input className='py-2 bg-[#ffffff1e] rounded-lg text-white outline-none placeholder:text-[#0091da72] px-3' placeholder='Company Name' />
                 </div>
-                <div className='mt-6 flex items-center justify-start gap-4'>
-                    <div className='flex relative items-center justify-start gap-2 '>
-                <input className='bg-[#000ba48a] inputBg' type="radio" id="html" name="fav_language" value="End Client" />
-                <p className='text-white font-[PoppinsRegular] text-[.8rem]'>End Client</p>
-                </div>
-                <div className='flex relative items-center justify-start gap-2 '>
-                <input className='radio' type="radio" id="html" name="fav_language" value="End Client" />
-         
-                <p className='text-white font-[PoppinsRegular] text-[.8rem]'>Agency</p>
-                </div>
-                <div className='flex relative items-center justify-start gap-2 '>
-                <input className='bg-[#ffffff1e] ' type="radio" id="html" name="fav_language" value="End Client" />
-           
-                <p className='text-white font-[PoppinsRegular] text-[.8rem]'>Event Company</p>
-                </div>
-                <div className='flex relative items-center justify-start gap-2 '>
-                <input className='bg-[#ffffff1e]' type="radio" id="html" name="fav_language" value="End Client" />
-              
-                <p className='text-white font-[PoppinsRegular] text-[.8rem]'>Fabricator</p>
-                </div>
-                <div className='flex relative items-center justify-start gap-2 '>
-                <input className='bg-[#ffffff1e]' type="radio" id="html" name="fav_language" value="End Client" />
-               
-                <p className='text-white font-[PoppinsRegular] text-[.8rem]'>AV Company</p>
-                </div>
-                <div className='flex relative items-center justify-start gap-2 '>
-               
-                <label className="circle" for="check-2" id="c2"></label>
-                <p className='text-white font-[PoppinsRegular] text-[.8rem]'>Other</p>
-                </div>
+                <div className=''>
+                <form className='mt-6 flex items-center justify-start gap-4' action="#">
+  <p className=''>
+    <input type="radio" id="test1" name="radio-group"  />
+    <label for="test1">End Client</label>
+  </p>
+  <p>
+    <input type="radio" id="test2" name="radio-group" />
+    <label for="test2">Agency</label>
+  </p>
+  <p>
+    <input type="radio" id="test3" name="radio-group" />
+    <label for="test3">Event Company</label>
+  </p>
+  <p>
+    <input type="radio" id="test4" name="radio-group" />
+    <label for="test4">Fabricator</label>
+  </p>
+  <p>
+    <input type="radio" id="test5" name="radio-group" />
+    <label for="test5">AV Company</label>
+  </p>
+  <p>
+    <input type="radio" id="test6" name="radio-group" />
+    <label for="test6">Other</label>
+  </p>
+</form>
                 </div>
                 <div className='mt-6' >
                     <textarea placeholder='Please Enter details about your enquiry' className='bg-[#ffffff1e] placeholder:text-[#0091da72] px-3 py-2 h-[100px] rounded-lg w-full' />

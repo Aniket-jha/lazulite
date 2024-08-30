@@ -11,7 +11,9 @@ const Banner = () => {
         </div>
         <div className='mb-[80px]'>
         <img src={BannerTitle} />
-            <button className='py-1.5 w-[190px] bannerButton mt-6 rounded-full text-white pl-4 flex text-[.9rem] items-center font-[PoppinsRegular] justify-center gap-3'  >Watch Showreel <img src={PlayButton} className='w-[33px]' /> </button>
+            <button className='py-1.5 w-[190px] group   bannerButton mt-6 rounded-full text-white pl-4 flex text-[.9rem] items-center font-[PoppinsRegular] justify-center gap-3'  >
+              <p>Watch Showreel</p>
+               <img src={PlayButton} className='w-[33px] buttonImage transform duration-[500ms] z-30   group-hover:rotate-[120deg]' /> </button>
         </div>
     </div>
   )

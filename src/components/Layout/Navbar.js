@@ -74,7 +74,7 @@ function NavListMenu() {
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium hover:bg-transparent">
             <ListItem
-              className="flex hover:bg-transparent focus:bg-transparent hover:text-white active:bg-transparent items-center gap-2  pr-4 p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
+              className="flex link hover:bg-transparent focus:bg-transparent hover:text-white active:bg-transparent items-center gap-2  pr-4 p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -132,7 +132,7 @@ export function NavbarTwo() {
         color="blue-gray"
         className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
       >
-        <Link to="/#broad" smooth scroll={el => scrollWithOffset(el)} className="flex items-center">
+        <Link to="/#broad" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Product
          </Link>
       </Typography>
@@ -142,7 +142,7 @@ export function NavbarTwo() {
         color="blue-gray"
         className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
       >
-       <Link to="/#speakers" smooth scroll={el => scrollWithOffset(el)} className="flex items-center">
+       <Link to="/#speakers" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Service
          </Link>
       </Typography>
@@ -153,7 +153,7 @@ export function NavbarTwo() {
         color="blue-gray"
         className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
       >
-        <Link to="/#sponsors" smooth scroll={el => scrollWithOffset(el)}  className="flex items-center">
+        <Link to="/#sponsors" smooth scroll={el => scrollWithOffset(el)}  className="flex link  items-center">
          About
          </Link>
       </Typography>
@@ -163,7 +163,7 @@ export function NavbarTwo() {
         color="blue-gray"
         className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
       >
-       <Link to="#contact" smooth scroll={el => scrollWithOffset(el)} className="flex items-center">
+       <Link to="#contact" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Contact
          </Link>
       </Typography>
