@@ -1,15 +1,51 @@
 {
-  "name": "lux",
+  "name": "bpm",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.11.5",
+    "@heroicons/react": "^2.1.1",
+    "@material-tailwind/react": "^2.1.9",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@tsparticles/engine": "^3.5.0",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.5.0",
+    "framer-motion": "^11.3.2",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "lenis": "^1.1.13",
+    "motion": "^10.18.0",
+    "react": "^18.2.0",
+    "react-awesome-reveal": "^4.2.13",
+    "react-countdown": "^2.3.5",
+    "react-dom": "^18.2.0",
+    "react-facebook-pixel": "^1.0.4",
+    "react-ga": "^3.3.1",
+    "react-icons": "^5.0.1",
+    "react-id-swiper": "^4.0.0",
+    "react-image-upload": "^3.0.1",
+    "react-instagram-embed": "^3.0.0",
+    "react-lazy-load-image-component": "^1.6.0",
+    "react-particles": "^2.12.2",
+    "react-responsive-masonry": "^2.2.1",
+    "react-router-dom": "^6.24.1",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "react-scroll-parallax": "^3.4.5",
+    "react-sequence-animator": "^2.3.0",
+    "react-sequence-player": "^1.1.0",
+    "react-social-media-embed": "^2.5.13",
+    "react-spring": "^9.7.3",
+    "react-step-progress-bar": "^1.0.3",
+    "react-to-pdf": "^1.0.1",
+    "react-vertical-timeline-component": "^3.6.0",
+    "swiper": "^11.1.4",
+    "web-vitals": "^2.1.0",
+    "yet-another-react-lightbox": "^3.19.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -34,5 +70,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
   }
 }
