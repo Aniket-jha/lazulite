@@ -163,7 +163,7 @@ export function NavbarTwo() {
         color="blue-gray"
         className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
       >
-       <Link to="contact" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
+       <Link to="/contact" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Contact
          </Link>
       </Typography>
