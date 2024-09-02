@@ -14,7 +14,7 @@ import Gaming from "../../assets/Gaming.png"
 import "./Home.css"
 const Products = () => {
   return (
-    <div  className='py-12 productBox px-64 flex flex-col items-center justify-center' >
+    <div  className='py-12 productBox px-48 flex flex-col items-center justify-center' >
          <h6 className='flex items-center font-[PoppinsRegular] justify-center text-white gap-2  text-[1.5rem]' ><img className='w-[30px]' src={StarIcon} /> Our Products<img className='w-[30px]' src={StarIcon} /></h6>
          <h3 className='text-[1.8rem] text-center font-[PoppinsMedium] mt-3 text-white' ><span className='bg-gradient-to-r from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text'> Make your marketing</span> viral with emotional, human-like experiences </h3>
          <div className='grid grid-cols-5 pt-24 justify-start pb-16 grid-flow-row gap-24' >

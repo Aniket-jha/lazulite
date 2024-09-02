@@ -1,7 +1,7 @@
 import { PlayCircleIcon } from '@heroicons/react/24/outline'
 import React from 'react'
 import "./Home.css"
-import BannerTitle from "../../assets/bannerTitle.png"
+import BannerTitle from "../../assets/mainText.png"
 import PlayButton from "../../assets/play.png"
 const Banner = () => {
   return (

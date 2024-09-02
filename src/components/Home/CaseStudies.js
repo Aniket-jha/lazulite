@@ -20,7 +20,7 @@ const CaseStudies = () => {
   return (
     <div  className='py-0  '>
                  <h6 className='flex items-center font-[SegoeRegular] justify-center text-white gap-3  text-[1.5rem]' ><img className='w-[30px]' src={StarIcon} /> Case Studies<img className='w-[30px]' src={StarIcon} /></h6>
-                 <h3 className='text-[2.2rem] text-center font-[PoppinsBold] mt-3 text-white' ><span className='bg-gradient-to-r from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text '> Proven Solution</span> For a Modern Challenges</h3>
+                 <h3 className='text-[2.2rem] text-center font-[PoppinsMedium] mt-3 text-white' ><span className='bg-gradient-to-r from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text '> Proven Solution</span> For a Modern Challenges</h3>
                  <div className='mt-3' >
                  <Swiper
           spaceBetween={0}

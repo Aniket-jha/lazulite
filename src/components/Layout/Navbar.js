@@ -132,7 +132,7 @@ export function NavbarTwo() {
         color="blue-gray"
         className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
       >
-        <Link to="/#broad" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
+        <Link to="/products" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Product
          </Link>
       </Typography>
@@ -142,7 +142,7 @@ export function NavbarTwo() {
         color="blue-gray"
         className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
       >
-       <Link to="/#speakers" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
+       <Link to="/services" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Service
          </Link>
       </Typography>
@@ -172,11 +172,11 @@ export function NavbarTwo() {
   );
  
   return (
-    <Navbar className={` fixed    w-[100vw !important] navBarBg  max-w-full  border-none shadow-none backdrop-saturate-0 backdrop-blur-none   rounded-none  py-4 px-2 lg:px-64 lg:py-6`}>
+    <Navbar className={` fixed    w-[100vw !important] navBarBg  max-w-full  border-none shadow-none backdrop-saturate-0 backdrop-blur-none   rounded-none  py-4 px-2 xl:px-48 2xl:px-48 lg:py-6`}>
       <div className="  grid grid-cols-2 lg:grid-cols-4 justify-between items-center text-blue-gray-900">
-       <a className="col-span-1" to="https://www.unionliving.in">
+       <Link className="col-span-1" to="/">
         <img className="w-[70px] lg:w-[180px]" src={Logo} alt="" />
-       </a>
+       </Link>
         <div className="hidden lg:block  col-span-3 ">{navList}</div>
        <div className="col-span-1 flex items-center justify-end " >
       

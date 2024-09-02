@@ -11,8 +11,8 @@ const Steps = () => {
   return (
     <div>
         <img src={Divider} />
-    <div className='py-12 px-64 flex flex-col items-center justify-center'>
-                 <h6 className='flex items-center font-[SegoeBold] justify-center text-white gap-3  text-[2.5rem]' ><img className='w-[30px]' src={StarIcon} /> Guidelines for Achieving <span className='bg-gradient-to-r from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text font-[SegoeBold]'> Project Success </span><img className='w-[30px]' src={StarIcon} /></h6>
+    <div className='py-12 px-48 flex flex-col items-center justify-center'>
+                 <h6 className='flex items-center font-[PoppinsMedium] justify-center text-white gap-3  text-[2rem]' ><img className='w-[30px]' src={StarIcon} /> Guidelines for Achieving <span className='bg-gradient-to-r from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text font-[PoppinsMedium]'> Project Success </span><img className='w-[30px]' src={StarIcon} /></h6>
                  <h3 className='text-[1rem] text-center font-[SegoeRegular] mt-3 text-white' >Explore our recent projects where we blend technology and creativity to craft immersive, memorable experiences. See how we turn concepts into reality with our dedication to excellence and innovation.  </h3>
                  <div className='grid  mt-12 gap-16 grid-cols-4 grid-flow-col' >
                     <div className='relative'>
