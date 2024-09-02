@@ -24,15 +24,15 @@ import "./Nabar.css"
 const navListMenuItems = [
   {
     title: "Case Studies",
-    
+    link:"/case-studies"
   },
   {
     title: "Portfolio",
- 
+    link:"/portfolio"
   },
   {
     title: "Blog",
-   
+   link:"/blogs"
   },
   {
     title: "Exhibition Center",
@@ -44,8 +44,8 @@ function NavListMenu() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
   const renderItems = navListMenuItems.map(
-    ({ icon, title, description }, key) => (
-      <a href="#" key={key}>
+    ({ icon, title, description,link }, key) => (
+      <Link to={link} key={key}>
         <MenuItem className="flex border-b-[1px] text-center hover:bg-transparent  justify-center rounded-none  border-gray-500 border-dotted items-center gap-3 ">
           <div>
             <p
@@ -58,7 +58,7 @@ function NavListMenu() {
             
           </div>
         </MenuItem>
-      </a>
+      </Link>
     ),
   );
  
@@ -163,7 +163,7 @@ export function NavbarTwo() {
         color="blue-gray"
         className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
       >
-       <Link to="#contact" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
+       <Link to="contact" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Contact
          </Link>
       </Typography>
