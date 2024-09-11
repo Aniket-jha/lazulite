@@ -1,11 +1,25 @@
-
-.navBarBg{
-    background-image: url("../../assets/navbarbg.png");
-    background-position: center;
-    background-size: cover;
-    background-color: black;
-    z-index: 100;
+.activeNav{
+  background-image:url("../../assets/totalbg.svg") ;
+  background-position: center;
+  background-position: cover;
+  background-color: black;
+  z-index: 999;
+  margin: 0;
+  --tw-backdrop-saturate: saturate(0);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+  backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
+.navBarBg{
+    
+  background: none;
+    background-color:none;
+    z-index: 999;
+    margin: 0;
+    --tw-backdrop-saturate: none;
+    -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+    backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
 .link{
     position: relative;
   }
@@ -28,3 +42,4 @@
     left: 0;
     background: #fff;
   }
+

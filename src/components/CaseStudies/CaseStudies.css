@@ -1,0 +1,7 @@
+.caseStudiesBanner{
+    background-image: url("../../assets/CaseStudies.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+}

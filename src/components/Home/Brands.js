@@ -36,15 +36,15 @@ const Brands = () => {
     
   }));
   return (
-    <div className=' brandBg relative  text-center' >
-        <img className='absolute bottom-[40%]' src={LineImage} />
-      <div className='2xl:px-48 pt-[300px]'>
+    <div className=' brandBg  relative  text-center' >
+       
+      <div className='paddingBox pt-[280px]'>
       
-         <h6 className='flex items-center font-[PoppinsRegular] justify-center text-white gap-2  text-[1.3rem]' ><img className='w-[25px]' src={StarIcon} /> Our Clients<img className='w-[25px]' src={StarIcon} /></h6>
-         <h3 className='text-[1.8rem] font-[PoppinsMedium] mt-2 mb-12 text-white' >Loved by <span className='bg-gradient-to-r from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text '> Industry Leaders </span></h3>
+         <h6 className='flex items-center font-[PoppinsMedium] justify-center text-white gap-2 leading-[32px]  text-[24px]' ><img className='w-[25px]' src={StarIcon} /> Our Clients<img className='w-[25px]' src={StarIcon} /></h6>
+         <h3 className='2xl:text-[32px] leading-[69px] font-[PoppinsMedium]  mb-12 text-white' >Loved by <span className='bg-gradient-to-r from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text '> Industry Leaders </span></h3>
         <BrandList images={imagesOne} speed={20000} />
         </div>
-        <img className='absolute bottom-[21.5%]' src={LineImage} />
+   
     </div>
   )
 }

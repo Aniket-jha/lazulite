@@ -19,7 +19,7 @@ import { ArrowRightCircleIcon, ArrowRightIcon } from '@heroicons/react/24/outlin
 const CaseStudies = () => {
   return (
     <div  className='py-0  '>
-                 <h6 className='flex items-center font-[SegoeRegular] justify-center text-white gap-3  text-[1.5rem]' ><img className='w-[30px]' src={StarIcon} /> Case Studies<img className='w-[30px]' src={StarIcon} /></h6>
+                 <h6 className='flex items-center font-[PoppinsRegular] justify-center text-white gap-3  text-[1.5rem]' ><img className='w-[30px]' src={StarIcon} /> Case Studies<img className='w-[30px]' src={StarIcon} /></h6>
                  <h3 className='text-[2.2rem] text-center font-[PoppinsMedium] mt-3 text-white' ><span className='bg-gradient-to-r from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text '> Proven Solution</span> For a Modern Challenges</h3>
                  <div className='mt-3' >
                  <Swiper
@@ -38,6 +38,10 @@ const CaseStudies = () => {
        
          1440:{
           width:1440,
+          slidesPerView:5
+        },
+        1800:{
+          width:1800,
           slidesPerView:5
         }
       }}
@@ -62,6 +66,7 @@ const CaseStudies = () => {
               className="xl:w-[700px]  w-[100%] rounded-xl"
               src={Case1Image}
               alt=""
+
             />
             <div className='flex items-center absolute px-3  bottom-[12%] justify-between' >
             <div className='w-[68%]'> 

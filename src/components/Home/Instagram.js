@@ -23,8 +23,8 @@ import "./Home.css"
 const Instagram = () => {
   return (
     <div className='relative' >
-      <img className='absolute w-[430px] z-[1]  top-[-3%]' src={UShapeLogo} />
-        <div className='ml-48 z-[2] rounded-l-lg py-6 px-3 grid grid-cols-7 gap-3 bg-[#0c1448]' >
+      <img className='absolute uShapeImage z-[1]  top-[-3%]' src={UShapeLogo} />
+        <div className='instagramMargin z-[2] rounded-l-lg  grid grid-cols-7 gap-3 bg-[#0c1448]' >
             <div className='col-span-2' >
                  <h6 className='flex items-center font-[PoppinsSemiBold] justify-start text-white gap-2  text-[1.8rem]' ><img className='w-[30px]' src={StarIcon} /> Our Recent </h6>
                  <h6 className='flex items-center ml-10 font-[PoppinsSemiBold] justify-start text-white gap-2  text-[1.8rem]' > Instagram Posts <img className='w-[30px]' src={StarIcon} /></h6>

@@ -12,9 +12,9 @@ import PinterestImage from "../../assets/pinterest.png"
 const Footer = () => {
   return (
     <div className='bg-[#151a3b69] py-8 flex items-center justify-center flex-col ' >
-        <img src={Logo} />
+        <img className='w-[150px]' src={Logo} />
         <p className='text-center text-[#B8B8B8] font-[PoppinsRegular] my-6  text-[.8rem]' >Warehouse #123, Mohammed Khalifa Warehouses <br /> Al Qusais Industrial 2, Dubai. </p>
-        <div className='flex items-center justify-center gap-8 text-[#707070] text-[.7rem] font-[PoppinsRegular] my-2'>
+        <div className='flex items-center justify-center gap-8 text-[#707070] text-[.7rem] font-[PoppinsRegular] my-1'>
             <p>About</p>
             <p>Contact</p>
             <p>Terms of Service</p>

@@ -6,7 +6,7 @@ import ChatImage from "../../assets/chat.png"
 import EmailImage from "../../assets/email.png"
 const Contact = () => {
   return (
-    <div className='py-12 px-48' >
+    <div className='py-12 paddingTwo' >
         <div className='grid rounded-lg grid-cols-3 grid-flow-row' >
             <div className='col-span-1 contactBg rounded-l-lg text-white  py-12 px-8' >
                 <h5 className='font-[PoppinsRegular] flex items-center justify-start gap-1 uppercase mb-1 text-[.9rem]'><MdMessage /> Start Your Journey</h5>
@@ -34,7 +34,7 @@ const Contact = () => {
                 <form className='mt-6 flex items-center justify-start gap-4' action="#">
   <p className=''>
     <input type="radio" id="test1" name="radio-group"  />
-    <label for="test1">End Client</label>
+    <label className='' for="test1">End Client</label>
   </p>
   <p>
     <input type="radio" id="test2" name="radio-group" />

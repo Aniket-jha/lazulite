@@ -1,0 +1,9 @@
+.slideList{
+
+}
+
+.slideImage{
+    transform: translate(3vw,300px);
+    rotate: 295deg;
+
+}

@@ -46,18 +46,18 @@ function NavListMenu() {
   const renderItems = navListMenuItems.map(
     ({ icon, title, description,link }, key) => (
       <Link to={link} key={key}>
-        <MenuItem className="flex border-b-[1px] text-center hover:bg-transparent  justify-center rounded-none  border-gray-500 border-dotted items-center gap-3 ">
+        <p className="flex border-b-[1px] text-center hover:bg-transparent  justify-center rounded-none  border-gray-500 border-dotted items-center gap-3 ">
           <div>
             <p
             
              
-              className="flex text-center hover:text-[#0093DA] hover:scale-110 transform duration-300 items-center text-white text-sm font-[PoppinsRegular]"
+              className="flex text-center hover:text-[#0093DA] hover:scale-110 transform duration-300 items-center my-2 text-white text-sm font-[PoppinsRegular]"
             >
               {title}
             </p>
             
           </div>
-        </MenuItem>
+        </p>
       </Link>
     ),
   );
@@ -73,8 +73,8 @@ function NavListMenu() {
       >
         <MenuHandler>
           <Typography as="div" variant="small" className="font-medium hover:bg-transparent">
-            <ListItem
-              className="flex link hover:bg-transparent focus:bg-transparent hover:text-white active:bg-transparent items-center gap-2  pr-4 p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
+            <p
+              className="flex link hover:bg-transparent focus:bg-transparent hover:text-white active:bg-transparent items-center gap-2  pr-4 p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[15px] leading-[24px] lg:text-[10px] text-white "
               selected={isMenuOpen || isMobileMenuOpen}
               onClick={() => setIsMobileMenuOpen((cur) => !cur)}
             >
@@ -91,7 +91,7 @@ function NavListMenu() {
                   isMobileMenuOpen ? "rotate-180" : ""
                 }`}
               />
-            </ListItem>
+            </p>
           </Typography>
         </MenuHandler>
         <MenuList className="hidden text-center bg-[#00000039]  border-none max-w-screen-xl  lg:block">
@@ -107,9 +107,17 @@ function NavListMenu() {
   );
 }
 export function NavbarTwo() {
+  const [colorChange, setColorChange] = React.useState("false")
   const [openNav, setOpenNav] = React.useState(false);
- 
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 80) {
+        setColorChange(true);
+    } else {
+        setColorChange(false);
+    }
+};
   React.useEffect(() => {
+    window.addEventListener("scroll", changeNavbarColor);
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false),
@@ -130,7 +138,7 @@ export function NavbarTwo() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
+        className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[15px] leading-[24px] lg:text-[10px] text-white "
       >
         <Link to="/products" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Product
@@ -140,7 +148,7 @@ export function NavbarTwo() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
+        className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[15px] leading-[24px] lg:text-[10px] text-white "
       >
        <Link to="/services" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Service
@@ -151,9 +159,9 @@ export function NavbarTwo() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
+        className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[15px] leading-[24px] lg:text-[10px] text-white "
       >
-        <Link to="/#sponsors" smooth scroll={el => scrollWithOffset(el)}  className="flex link  items-center">
+        <Link to="/about" smooth scroll={el => scrollWithOffset(el)}  className="flex link  items-center">
          About
          </Link>
       </Typography>
@@ -161,7 +169,7 @@ export function NavbarTwo() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[12px] lg:text-[10px] text-white "
+        className="p-1 font-[PoppinsRegular] tracking-wider 2xl:text-[15px] xl:text-[15px] leading-[24px] lg:text-[10px] text-white "
       >
        <Link to="/contact" smooth scroll={el => scrollWithOffset(el)} className="flex link items-center">
          Contact
@@ -172,7 +180,7 @@ export function NavbarTwo() {
   );
  
   return (
-    <Navbar className={` fixed    w-[100vw !important] navBarBg  max-w-full  border-none shadow-none backdrop-saturate-0 backdrop-blur-none   rounded-none  py-4 px-2 xl:px-48 2xl:px-48 lg:py-6`}>
+    <div className={` fixed ${colorChange === true ? "activeNav" : "navBarBg"}    w-[100vw]  max-w-full  border-none shadow-none backdrop-saturate-0 backdrop-blur-none   rounded-none  py-6 paddingBox`}>
       <div className="  grid grid-cols-2 lg:grid-cols-4 justify-between items-center text-blue-gray-900">
        <Link className="col-span-1" to="/">
         <img className="w-[70px] lg:w-[180px]" src={Logo} alt="" />
@@ -226,6 +234,6 @@ export function NavbarTwo() {
          
         </div>
       </MobileNav>
-    </Navbar>
+    </div>
   );
 }

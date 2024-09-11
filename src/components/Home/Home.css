@@ -10,6 +10,8 @@
     background-size: cover;
     padding-top: 50px;
     height: 90vh;
+    z-index: 2;
+    position: relative;
 }
 .bannerButton{
     background: linear-gradient(to right,rgba(0, 145, 218, 0.4), rgba(0, 249, 249, 46%));
@@ -71,6 +73,7 @@
     background-size: cover;
    margin-top: -260px;
    z-index: 1;
+   position: relative;
     height: 650px;
 }
 .expertiseBg{

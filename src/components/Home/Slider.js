@@ -27,7 +27,7 @@ const Slider = () => {
   const nextRef = useRef(null);
   return (
     <div> 
-        <div className='px-[6.5rem] mb-3 relative pt-16' >
+        <div className='px-[10rem] mb-3 relative pt-0' >
         <img src={PortfolioImage} />
         <div className='absolute flex items-center justify-center flex-col left-0 right-0 bottom-[2%]'>
         <h6 className='flex items-center font-[SegoeRegular] justify-center text-white gap-1  text-[1.3rem]' ><img className='w-[30px]' src={StarIcon} /> Portfolio<img className='w-[30px]' src={StarIcon} /></h6>
@@ -37,7 +37,7 @@ See how we turn concepts into reality with our dedication to <br /> excellence a
 <button className='py-0.5 w-[170px] bannerButton2 mt-6 text-[#00b4e2] rounded-full  pl-2 flex text-[.8rem] items-center font-[PoppinsRegular] justify-center gap-3'  >Explore all Projects <img src={PlayButton} className='w-[25px]' /> </button>
         </div>
         </div>
-        <div className='px-[6rem]' > 
+        <div className='px-[9.5rem]' > 
         <video autoPlay={true} playsInline={true} muted={true} loop={true}  >
   <source src={MainVideo} type="video/webm" />
   

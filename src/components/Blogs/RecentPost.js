@@ -21,7 +21,7 @@ const RecentPost = () => {
   return (
     <div className=' '>
         <h6 className='flex items-center font-[PoppinsBold] justify-center text-white gap-3  text-[2rem]' ><img className='w-[30px]' src={StarIcon} /> Our Recent Posts<img className='w-[30px]' src={StarIcon} /></h6>
-        <h3 className='text-[1rem] text-center font-[SegoeRegular] mt-3 text-white' >Explore our recent Instagram posts to stay up-to-date with our <br /> latest projects, events, and brand activations.</h3>
+        <h3 className='text-[1rem] text-center font-[PoppinsRegular] mt-3 text-white' >Explore our recent Instagram posts to stay up-to-date with our <br /> latest projects, events, and brand activations.</h3>
         <div className='mt-12'>
         <Swiper
           spaceBetween={0}

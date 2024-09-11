@@ -9,8 +9,8 @@ const Numbers = () => {
         <div className='flex relative w-[220px] items-center justify-center gap-2' >
            <img src={CircleBlob} />
             <div className='px-3 absolute flex items-center justify-center flex-col text-center' >
-            <h5 className='bg-gradient-to-t text-[2.5rem] from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text font-[SegoeBold]'> 100+ </h5>
-            <p className='text-white font-[SegoeRegular]' >Clients</p>
+            <h5 className='bg-gradient-to-t text-[2.5rem] from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text font-[PoppinsBold]'> 100+ </h5>
+            <p className='text-white font-[PoppinsRegular]' >Clients</p>
             </div>
            
         </div>
@@ -18,16 +18,16 @@ const Numbers = () => {
         <div className='flex relative  w-[220px] items-center justify-center gap-2' >
         <img src={CircleBlob} />
             <div className='px-8  absolute flex items-center justify-center flex-col text-center' >
-            <h5 className='bg-gradient-to-t text-[2.5rem] from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text font-[SegoeBold]'> 96% </h5>
-            <p className='text-white font-[SegoeRegular]' >Client Retention</p>
+            <h5 className='bg-gradient-to-t text-[2.5rem] from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text font-[PoppinsBold]'> 96% </h5>
+            <p className='text-white font-[PoppinsRegular]' >Client Retention</p>
             </div>
         </div>
         <img src={Divider} />
         <div className='flex relative  w-[220px] items-center justify-center gap-2' >
         <img src={CircleBlob} />
             <div className='px-8 absolute flex items-center justify-center flex-col text-center' >
-            <h5 className='bg-gradient-to-t text-[2.5rem] from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text font-[SegoeBold]'> 1000+ </h5>
-            <p className='text-white font-[SegoeRegular]' >Successful Projects</p>
+            <h5 className='bg-gradient-to-t text-[2.5rem] from-[#0093DA] to-[#00F7F9] inline-block text-transparent bg-clip-text font-[PoppinsBold]'> 1000+ </h5>
+            <p className='text-white font-[PoppinsRegular]' >Successful Projects</p>
             </div>
            
         </div>
